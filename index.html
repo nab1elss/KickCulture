@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>KickCulture — Sneakers Original untuk Langkahmu</title>
+  <meta name="description" content="KickCulture: toko sneakers original pilihan untuk running, lifestyle, basket, dan skate. Gratis ongkir, retur 30 hari, 100% original.">
+  <meta name="theme-color" content="#0E0E10">
+
+  <link rel="icon" href="assets/images/favicon.svg" type="image/svg+xml">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <link rel="preload" as="image" href="assets/images/hero/hero-1.jpg">
+  <script>document.documentElement.classList.add('js');</script>
+</head>
+
+<body class="is-loading">
+
+  <!-- Simbol logo (dipakai ulang lewat <use>) -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+    <symbol id="kc-mark" viewBox="0 0 64 64">
+      <rect width="64" height="64" rx="16" style="fill: var(--mark-bg, #0E0E10)"/>
+      <g style="fill: var(--mark-fg, #C8F031)" transform="skewX(-12) translate(7 0)">
+        <rect x="24" y="14" width="9" height="36" rx="2"/>
+        <path d="M33 31 L44 14 H54 L40 34 Z"/>
+        <path d="M36.5 29.5 L54 50 H43.5 L31 36 Z"/>
+      </g>
+      <g style="stroke: var(--mark-fg, #C8F031)" stroke-width="4" stroke-linecap="round" fill="none">
+        <path d="M9 22 H18"/>
+        <path d="M6 32 H17"/>
+        <path d="M11 42 H16"/>
+      </g>
+    </symbol>
+  </svg>
+
+  <!-- ===================== PRELOADER ===================== -->
+  <div class="preloader" aria-hidden="true">
+    <div class="preloader-inner">
+      <svg class="preloader-mark" viewBox="0 0 64 64">
+        <rect class="pm-bg" width="64" height="64" rx="16"/>
+        <g class="pm-k" transform="skewX(-12) translate(7 0)">
+          <rect x="24" y="14" width="9" height="36" rx="2"/>
+          <path d="M33 31 L44 14 H54 L40 34 Z"/>
+          <path d="M36.5 29.5 L54 50 H43.5 L31 36 Z"/>
+        </g>
+        <g class="pm-lines" stroke-width="4" stroke-linecap="round" fill="none">
+          <path class="pm-line" d="M9 22 H18"/>
+          <path class="pm-line" d="M6 32 H17"/>
+          <path class="pm-line" d="M11 42 H16"/>
+        </g>
+      </svg>
+      <p class="preloader-word">
+        <span style="--i:0">K</span><span style="--i:1">I</span><span style="--i:2">C</span><span style="--i:3">K</span><span style="--i:4">C</span><span style="--i:5">U</span><span style="--i:6">L</span><span style="--i:7">T</span><span style="--i:8">U</span><span style="--i:9">R</span><span style="--i:10">E</span>
+      </p>
+      <div class="preloader-bar"><span></span></div>
+    </div>
+  </div>
+
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <!-- ===================== ANNOUNCEMENT ===================== -->
+  <div class="announce">
+    <div class="announce-track">
+      <div class="announce-group">
+        <span>Gratis ongkir se-Indonesia untuk belanja min. Rp2.000.000</span><i class="ri-flashlight-fill"></i>
+        <span>100% original atau uang kembali 2x lipat</span><i class="ri-flashlight-fill"></i>
+        <span>Cicilan 0% hingga 12 bulan</span><i class="ri-flashlight-fill"></i>
+        <span>Pakai kode <b>KICKBARU</b> untuk diskon 10%</span><i class="ri-flashlight-fill"></i>
+      </div>
+      <div class="announce-group" aria-hidden="true">
+        <span>Gratis ongkir se-Indonesia untuk belanja min. Rp2.000.000</span><i class="ri-flashlight-fill"></i>
+        <span>100% original atau uang kembali 2x lipat</span><i class="ri-flashlight-fill"></i>
+        <span>Cicilan 0% hingga 12 bulan</span><i class="ri-flashlight-fill"></i>
+        <span>Pakai kode <b>KICKBARU</b> untuk diskon 10%</span><i class="ri-flashlight-fill"></i>
+      </div>
+    </div>
+  </div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="header" data-header>
+    <div class="container header-inner">
+      <a href="#beranda" class="logo" aria-label="KickCulture, kembali ke beranda">
+        <svg class="logo-mark" aria-hidden="true"><use href="#kc-mark"/></svg>
+        <span class="logo-text"><span class="logo-kick">KICK</span><span class="logo-culture">CULTURE</span></span>
+      </a>
+
+      <nav class="nav" aria-label="Navigasi utama">
+        <span class="nav-indicator" data-nav-indicator aria-hidden="true"></span>
+        <ul class="nav-list">
+          <li><a href="#beranda" class="nav-link" data-nav-link>Beranda</a></li>
+          <li><a href="#kategori" class="nav-link" data-nav-link>Kategori</a></li>
+          <li><a href="#produk" class="nav-link" data-nav-link>Produk</a></li>
+          <li><a href="#promo" class="nav-link" data-nav-link>Promo</a></li>
+          <li><a href="#drop" class="nav-link" data-nav-link>Drop</a></li>
+          <li><a href="#kontak" class="nav-link" data-nav-link>Kontak</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn" type="button" data-search-open aria-label="Cari produk">
+          <i class="ri-search-line"></i>
+        </button>
+        <button class="icon-btn" type="button" data-wishlist-open aria-label="Buka wishlist">
+          <i class="ri-heart-3-line"></i>
+          <span class="badge" data-wishlist-count>0</span>
+        </button>
+        <button class="icon-btn" type="button" data-cart-open aria-label="Buka keranjang">
+          <i class="ri-shopping-bag-3-line"></i>
+          <span class="badge" data-cart-count>0</span>
+        </button>
+        <button class="burger" type="button" data-menu-toggle aria-label="Buka menu" aria-expanded="false" aria-controls="mobile-menu">
+          <span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== MOBILE MENU ===================== -->
+  <div class="mobile-menu" id="mobile-menu" data-mobile-menu aria-hidden="true">
+    <nav aria-label="Navigasi seluler">
+      <ul class="mm-list">
+        <li style="--i:0"><a href="#beranda" data-mm-link><span class="mm-num">01</span>Beranda</a></li>
+        <li style="--i:1"><a href="#kategori" data-mm-link><span class="mm-num">02</span>Kategori</a></li>
+        <li style="--i:2"><a href="#produk" data-mm-link><span class="mm-num">03</span>Produk</a></li>
+        <li style="--i:3"><a href="#promo" data-mm-link><span class="mm-num">04</span>Promo</a></li>
+        <li style="--i:4"><a href="#drop" data-mm-link><span class="mm-num">05</span>Drop</a></li>
+        <li style="--i:5"><a href="#kontak" data-mm-link><span class="mm-num">06</span>Kontak</a></li>
+      </ul>
+    </nav>
+    <div class="mm-footer">
+      <p>Butuh bantuan? Chat admin kami</p>
+      <a href="https://wa.me/6281234567890" target="_blank" rel="noopener" class="mm-contact">+62 812-3456-7890</a>
+      <ul class="socials">
+        <li><a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a></li>
+        <li><a href="#" aria-label="TikTok"><i class="ri-tiktok-line"></i></a></li>
+        <li><a href="#" aria-label="X"><i class="ri-twitter-x-line"></i></a></li>
+        <li><a href="#" aria-label="YouTube"><i class="ri-youtube-line"></i></a></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- ===================== SEARCH ===================== -->
+  <div class="search-panel" data-search-panel aria-hidden="true" role="dialog" aria-label="Pencarian produk">
+    <div class="container">
+      <form class="search-form" role="search" data-search-form>
+        <i class="ri-search-line" aria-hidden="true"></i>
+        <input type="search" placeholder="Cari sneakers… mis. runner, skate, putih" data-search-input aria-label="Kata kunci pencarian" autocomplete="off">
+        <button type="button" class="icon-btn" data-search-close aria-label="Tutup pencarian"><i class="ri-close-line"></i></button>
+      </form>
+      <div class="search-tags">
+        <span>Populer:</span>
+        <button type="button" data-search-tag>Running</button>
+        <button type="button" data-search-tag>Skate</button>
+        <button type="button" data-search-tag>Hi</button>
+        <button type="button" data-search-tag>White</button>
+      </div>
+      <p class="search-label" data-search-label>Rekomendasi untukmu</p>
+      <ul class="search-results" data-search-results></ul>
+    </div>
+  </div>
+
+  <main>
+
+    <!-- ===================== HERO ===================== -->
+    <section class="hero" id="beranda">
+      <div class="hero-bg" aria-hidden="true">
+        <span class="hero-blob"></span>
+        <span class="hero-lines"></span>
+      </div>
+
+      <div class="container hero-inner">
+        <div class="hero-content">
+          <p class="hero-eyebrow hero-anim" style="--d:.15s"><span class="dot"></span>New Drop — Koleksi 2026</p>
+
+          <h1 class="hero-title">
+            <span class="line"><span>Step Into</span></span>
+            <span class="line"><span>The <em>Culture</em></span></span>
+          </h1>
+
+          <p class="hero-text hero-anim" style="--d:.45s">
+            Sneakers original pilihan, dari running sampai streetwear. Dikurasi untuk kamu yang melangkah dengan gaya sendiri.
+          </p>
+
+          <div class="hero-actions hero-anim" style="--d:.55s">
+            <a href="#produk" class="btn btn-primary">Belanja Sekarang <i class="ri-arrow-right-up-line"></i></a>
+            <a href="#kategori" class="btn btn-ghost">Lihat Kategori</a>
+          </div>
+
+          <ul class="hero-stats hero-anim" style="--d:.65s">
+            <li><strong data-count="120" data-suffix="+">0</strong><span>Model sneakers</span></li>
+            <li><strong data-count="15" data-suffix="K+">0</strong><span>Pelanggan puas</span></li>
+            <li><strong data-count="4.9" data-decimals="1">0</strong><span>Rating toko</span></li>
+          </ul>
+        </div>
+
+        <div class="hero-visual hero-anim" style="--d:.3s" data-hero-visual>
+          <div class="hero-stage" data-hero-stage>
+            <img src="assets/images/hero/hero-1.jpg" class="hero-slide is-active" data-hero-slide data-id="kc-h01" alt="Sneakers running warna volt" width="900" height="1100">
+            <img src="assets/images/hero/hero-2.jpg" class="hero-slide" data-hero-slide data-id="kc-h02" alt="Sneakers basket hitam di latar biru" width="900" height="1100" loading="lazy">
+            <img src="assets/images/hero/hero-3.jpg" class="hero-slide" data-hero-slide data-id="kc-h03" alt="Sneakers lifestyle krem di latar oranye" width="900" height="1100" loading="lazy">
+          </div>
+
+          <a href="#drop" class="hero-badge" aria-label="Lihat limited drop">
+            <svg viewBox="0 0 120 120" aria-hidden="true">
+              <defs><path id="badge-circle" d="M60,60 m-45,0 a45,45 0 1,1 90,0 a45,45 0 1,1 -90,0"/></defs>
+              <text><textPath href="#badge-circle">NEW DROP 2026 • KICKCULTURE • </textPath></text>
+            </svg>
+            <i class="ri-arrow-right-down-line"></i>
+          </a>
+
+          <div class="hero-info" data-hero-info>
+            <span class="hero-info-tag" data-hero-tag>Running</span>
+            <h2 class="hero-info-name" data-hero-name>Volt Runner 01</h2>
+            <p class="hero-info-price" data-hero-price>Rp 1.899.000</p>
+            <button class="hero-info-btn" type="button" data-hero-add aria-label="Tambahkan ke keranjang"><i class="ri-add-line"></i></button>
+          </div>
+
+          <div class="hero-thumbs" role="tablist" aria-label="Pilih colorway">
+            <button class="hero-thumb is-active" type="button" role="tab" aria-selected="true" data-hero-thumb aria-label="Colorway 1: Volt">
+              <img src="assets/images/hero/hero-1.jpg" alt="" width="64" height="64">
+            </button>
+            <button class="hero-thumb" type="button" role="tab" aria-selected="false" data-hero-thumb aria-label="Colorway 2: Sky">
+              <img src="assets/images/hero/hero-2.jpg" alt="" width="64" height="64" loading="lazy">
+            </button>
+            <button class="hero-thumb" type="button" role="tab" aria-selected="false" data-hero-thumb aria-label="Colorway 3: Terra">
+              <img src="assets/images/hero/hero-3.jpg" alt="" width="64" height="64" loading="lazy">
+            </button>
+          </div>
+
+          <p class="hero-counter" aria-hidden="true"><span data-hero-current>01</span> / 03</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== TICKER ===================== -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-row ticker-row--lime">
+        <div class="ticker-track">
+          <div class="ticker-group"><span>Running</span><b>✦</b><span>Lifestyle</span><b>✦</b><span>Basketball</span><b>✦</b><span>Skate</span><b>✦</b><span>Limited Edition</span><b>✦</b><span>100% Original</span><b>✦</b></div>
+          <div class="ticker-group"><span>Running</span><b>✦</b><span>Lifestyle</span><b>✦</b><span>Basketball</span><b>✦</b><span>Skate</span><b>✦</b><span>Limited Edition</span><b>✦</b><span>100% Original</span><b>✦</b></div>
+        </div>
+      </div>
+      <div class="ticker-row ticker-row--ink">
+        <div class="ticker-track ticker-track--reverse">
+          <div class="ticker-group"><span>Step Into The Culture</span><b>✦</b><span>Gratis Ongkir</span><b>✦</b><span>Retur 30 Hari</span><b>✦</b><span>Cicilan 0%</span><b>✦</b></div>
+          <div class="ticker-group"><span>Step Into The Culture</span><b>✦</b><span>Gratis Ongkir</span><b>✦</b><span>Retur 30 Hari</span><b>✦</b><span>Cicilan 0%</span><b>✦</b></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ===================== KATEGORI ===================== -->
+    <section class="section categories" id="kategori">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal>Kategori</p>
+            <h2 class="section-title" data-reveal style="--d:.08s">Temukan Gaya<br>Langkahmu</h2>
+          </div>
+          <p class="section-desc" data-reveal style="--d:.16s">
+            Dari sepatu lari untuk pagi hari sampai sneakers santai untuk nongkrong. Pilih kategori dan mulai jelajahi.
+          </p>
+        </div>
+
+        <div class="bento">
+          <a href="#produk" class="bento-card bento-card--tall" data-filter-link="all" data-reveal="up">
+            <img src="assets/images/categories/pria.jpg" alt="Pria duduk memakai sneakers high-top" loading="lazy" width="800" height="1100">
+            <div class="bento-content">
+              <span class="bento-count">64 produk</span>
+              <h3>Pria</h3>
+              <p>Siluet tegas untuk harian dan streetwear.</p>
+            </div>
+            <span class="bento-arrow" aria-hidden="true"><i class="ri-arrow-right-up-line"></i></span>
+          </a>
+          <a href="#produk" class="bento-card bento-card--wide" data-filter-link="all" data-reveal="up" style="--d:.1s">
+            <img src="assets/images/categories/wanita.jpg" alt="Perempuan berolahraga di studio" loading="lazy" width="1200" height="700">
+            <div class="bento-content">
+              <span class="bento-count">52 produk</span>
+              <h3>Wanita</h3>
+              <p>Ringan, nyaman, dan penuh warna.</p>
+            </div>
+            <span class="bento-arrow" aria-hidden="true"><i class="ri-arrow-right-up-line"></i></span>
+          </a>
+          <a href="#produk" class="bento-card" data-filter-link="running" data-reveal="up" style="--d:.2s">
+            <img src="assets/images/categories/running.jpg" alt="Pelari mengikat tali sepatu" loading="lazy" width="900" height="700">
+            <div class="bento-content">
+              <span class="bento-count">38 produk</span>
+              <h3>Running</h3>
+              <p>Bantalan responsif untuk tiap kilometer.</p>
+            </div>
+            <span class="bento-arrow" aria-hidden="true"><i class="ri-arrow-right-up-line"></i></span>
+          </a>
+          <a href="#produk" class="bento-card" data-filter-link="lifestyle" data-reveal="up" style="--d:.3s">
+            <img src="assets/images/categories/lifestyle.jpg" alt="Sneakers putih dipakai di jalanan" loading="lazy" width="900" height="700">
+            <div class="bento-content">
+              <span class="bento-count">46 produk</span>
+              <h3>Lifestyle</h3>
+              <p>Clean look yang cocok untuk semua outfit.</p>
+            </div>
+            <span class="bento-arrow" aria-hidden="true"><i class="ri-arrow-right-up-line"></i></span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== PRODUK ===================== -->
+    <section class="section products" id="produk">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal>Best Seller</p>
+            <h2 class="section-title" data-reveal style="--d:.08s">Paling Dicari<br>Minggu Ini</h2>
+          </div>
+          <div class="filter" role="tablist" aria-label="Filter produk" data-filter data-reveal style="--d:.16s">
+            <span class="filter-pill" data-filter-pill aria-hidden="true"></span>
+            <button class="filter-btn is-active" type="button" role="tab" aria-selected="true" data-filter-btn="all">Semua</button>
+            <button class="filter-btn" type="button" role="tab" aria-selected="false" data-filter-btn="running">Running</button>
+            <button class="filter-btn" type="button" role="tab" aria-selected="false" data-filter-btn="lifestyle">Lifestyle</button>
+            <button class="filter-btn" type="button" role="tab" aria-selected="false" data-filter-btn="basketball">Basket</button>
+            <button class="filter-btn" type="button" role="tab" aria-selected="false" data-filter-btn="skate">Skate</button>
+            <button class="filter-btn" type="button" role="tab" aria-selected="false" data-filter-btn="sale">Promo</button>
+          </div>
+        </div>
+
+        <div class="product-grid" data-product-grid aria-live="polite"></div>
+
+        <div class="products-more" data-load-more-wrap>
+          <button class="btn btn-ghost" type="button" data-load-more>Lihat Lebih Banyak <i class="ri-arrow-down-line"></i></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== FLASH SALE ===================== -->
+    <section class="section flash" id="promo">
+      <div class="container">
+        <div class="flash-card" data-reveal="zoom">
+          <div class="flash-bgtext" aria-hidden="true"><span>SALE • SALE • SALE • </span><span>SALE • SALE • SALE • </span></div>
+
+          <div class="flash-content">
+            <p class="eyebrow eyebrow--light"><i class="ri-flashlight-fill"></i> Flash Sale Akhir Pekan</p>
+            <h2 class="flash-title">Diskon<br><span>Sampai 50%</span></h2>
+            <p class="flash-text">Harga spesial untuk puluhan model pilihan. Berakhir Minggu pukul 23.59, dan stoknya tidak kami tambah.</p>
+
+            <div class="countdown" data-countdown role="timer" aria-label="Sisa waktu flash sale">
+              <div class="cd-box"><span data-cd="days">00</span><small>Hari</small></div>
+              <div class="cd-box"><span data-cd="hours">00</span><small>Jam</small></div>
+              <div class="cd-box"><span data-cd="minutes">00</span><small>Menit</small></div>
+              <div class="cd-box"><span data-cd="seconds">00</span><small>Detik</small></div>
+            </div>
+
+            <a href="#produk" class="btn btn-primary" data-filter-link="sale">Ambil Promonya <i class="ri-arrow-right-up-line"></i></a>
+          </div>
+
+          <div class="flash-visual">
+            <div class="flash-img">
+              <img src="assets/images/flash-sale.jpg" alt="Sneakers boot hijau zaitun memercik genangan air" loading="lazy" width="1000" height="1000">
+            </div>
+            <span class="flash-sticker"><span>-50%</span></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== LIMITED DROP ===================== -->
+    <section class="section drop" id="drop">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal>Limited Drop</p>
+            <h2 class="section-title" data-reveal style="--d:.08s">Rilis Terbatas,<br>Siapa Cepat Dapat</h2>
+          </div>
+          <div class="drop-controls" data-reveal style="--d:.16s">
+            <div class="drop-progress" aria-hidden="true"><span data-drop-progress></span></div>
+            <button class="round-btn" type="button" data-drop-prev aria-label="Geser ke kiri"><i class="ri-arrow-left-line"></i></button>
+            <button class="round-btn" type="button" data-drop-next aria-label="Geser ke kanan"><i class="ri-arrow-right-line"></i></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="drop-track" data-drop-track>
+        <article class="drop-banner" data-reveal="zoom">
+          <img src="assets/images/drop-banner.jpg" alt="Sepasang sneakers abu-abu gelap" loading="lazy" width="800" height="1100">
+          <div class="drop-banner-content">
+            <span class="tag">Drop #07</span>
+            <h3>Monochrome<br>Pack</h3>
+            <p>6 siluet dengan stok terbatas. Rilis setiap Jumat pukul 19.00 WIB.</p>
+            <button class="btn btn-primary btn-sm" type="button" data-remind>Ingatkan Saya <i class="ri-notification-3-line"></i></button>
+          </div>
+        </article>
+        <!-- kartu produk drop dirender oleh script.js -->
+      </div>
+    </section>
+
+    <!-- ===================== KEUNGGULAN ===================== -->
+    <section class="section features" id="tentang">
+      <div class="container features-inner">
+        <div class="features-intro">
+          <p class="eyebrow" data-reveal>Kenapa KickCulture</p>
+          <h2 class="section-title" data-reveal style="--d:.08s">Belanja Sneakers<br>Tanpa Ragu</h2>
+          <p data-reveal style="--d:.16s">Kami tahu membeli sneakers online bisa bikin deg-degan. Karena itu setiap pesanan kami lindungi dari awal sampai sepatunya sampai di kakimu.</p>
+          <div data-reveal style="--d:.24s"><a href="#kontak" class="btn btn-ghost">Hubungi Kami <i class="ri-arrow-right-up-line"></i></a></div>
+        </div>
+
+        <ul class="features-grid">
+          <li data-reveal style="--d:0s">
+            <div class="feature-card">
+            <span class="feature-num">01</span>
+            <span class="feature-icon"><i class="ri-shield-check-line"></i></span>
+            <h3>100% Original</h3>
+            <p>Setiap pasang dicek keasliannya oleh tim kami. Terbukti palsu? Uang kembali 2x lipat.</p>
+            </div>
+          </li>
+          <li data-reveal style="--d:.1s">
+            <div class="feature-card">
+            <span class="feature-num">02</span>
+            <span class="feature-icon"><i class="ri-truck-line"></i></span>
+            <h3>Gratis Ongkir</h3>
+            <p>Pengiriman gratis ke seluruh Indonesia untuk belanja minimal Rp2 juta.</p>
+            </div>
+          </li>
+          <li data-reveal style="--d:.2s">
+            <div class="feature-card">
+            <span class="feature-num">03</span>
+            <span class="feature-icon"><i class="ri-arrow-go-back-line"></i></span>
+            <h3>Retur 30 Hari</h3>
+            <p>Ukurannya kurang pas? Tukar atau retur tanpa ribet dalam 30 hari.</p>
+            </div>
+          </li>
+          <li data-reveal style="--d:.3s">
+            <div class="feature-card">
+            <span class="feature-num">04</span>
+            <span class="feature-icon"><i class="ri-customer-service-2-line"></i></span>
+            <h3>CS 24/7</h3>
+            <p>Admin siap membantu lewat WhatsApp kapan pun kamu butuh.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ===================== TESTIMONI ===================== -->
+    <section class="section testi" id="testimoni">
+      <div class="container testi-inner">
+        <p class="eyebrow" data-reveal>Kata Mereka</p>
+        <div class="testi-stage" data-reveal style="--d:.1s">
+          <span class="testi-quote" aria-hidden="true"><i class="ri-double-quotes-l"></i></span>
+
+          <blockquote class="testi-item is-active" data-testi-item>
+            <p>“Barangnya original, packing super rapi, dan sampai cuma sehari. Aero Glide X-nya enteng banget buat lari pagi. Fix langganan!”</p>
+            <footer>
+              <span class="stars" aria-label="5 dari 5 bintang">★★★★★</span>
+              <strong>Dimas Prasetyo</strong>
+              <span>Jakarta · beli Aero Glide X</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testi-item" data-testi-item aria-hidden="true">
+            <p>“Awalnya ragu soal ukuran, tapi admin bantu cek panduan ukuran lewat WhatsApp. Pas banget di kaki, warnanya juga sama persis seperti di foto.”</p>
+            <footer>
+              <span class="stars" aria-label="5 dari 5 bintang">★★★★★</span>
+              <strong>Salsa Amelia</strong>
+              <span>Bandung · beli Pastel Drift</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testi-item" data-testi-item aria-hidden="true">
+            <p>“Dapat Rebel Hi pas flash sale, hemat hampir 500 ribu. Kualitas kulitnya mantap dan box-nya mulus. Recommended seller!”</p>
+            <footer>
+              <span class="stars" aria-label="5 dari 5 bintang">★★★★★</span>
+              <strong>Arif Nugraha</strong>
+              <span>Surabaya · beli Rebel Hi '85</span>
+            </footer>
+          </blockquote>
+          <blockquote class="testi-item" data-testi-item aria-hidden="true">
+            <p>“Proses retur gampang banget waktu aku salah pilih ukuran. Tukar size cuma 3 hari. Pelayanannya ramah dan fast response.”</p>
+            <footer>
+              <span class="stars" aria-label="4 dari 5 bintang">★★★★☆</span>
+              <strong>Nadia Putri</strong>
+              <span>Yogyakarta · beli Cloud White</span>
+            </footer>
+          </blockquote>
+        </div>
+
+        <div class="testi-avatars" role="tablist" aria-label="Pilih testimoni" data-reveal style="--d:.2s">
+          <button class="testi-avatar is-active" type="button" role="tab" aria-selected="true" data-testi-btn aria-label="Testimoni Dimas"><img src="assets/images/avatars/a01.jpg" alt="" width="160" height="160" loading="lazy"></button>
+          <button class="testi-avatar" type="button" role="tab" aria-selected="false" data-testi-btn aria-label="Testimoni Salsa"><img src="assets/images/avatars/a02.jpg" alt="" width="160" height="160" loading="lazy"></button>
+          <button class="testi-avatar" type="button" role="tab" aria-selected="false" data-testi-btn aria-label="Testimoni Arif"><img src="assets/images/avatars/a03.jpg" alt="" width="160" height="160" loading="lazy"></button>
+          <button class="testi-avatar" type="button" role="tab" aria-selected="false" data-testi-btn aria-label="Testimoni Nadia"><img src="assets/images/avatars/a04.jpg" alt="" width="160" height="160" loading="lazy"></button>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== KOMUNITAS ===================== -->
+    <section class="section community" id="komunitas">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <p class="eyebrow" data-reveal>Komunitas</p>
+            <h2 class="section-title" data-reveal style="--d:.08s">#KickCultureID</h2>
+          </div>
+          <div data-reveal style="--d:.16s"><a href="#" class="btn btn-ghost"><i class="ri-instagram-line"></i> @kickculture.id</a></div>
+        </div>
+      </div>
+
+      <div class="gallery">
+        <div class="gallery-track">
+          <div class="gallery-group">
+            <a href="#" class="gallery-item"><img src="assets/images/community/c01.jpg" alt="Sneakers putih high-top di aspal" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+            <a href="#" class="gallery-item"><img src="assets/images/community/c02.jpg" alt="Sneakers merah hitam di lintasan" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+            <a href="#" class="gallery-item"><img src="assets/images/community/c03.jpg" alt="Sneakers putih di lapangan biru" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+            <a href="#" class="gallery-item"><img src="assets/images/community/c04.jpg" alt="Sneakers pastel di trotoar" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+            <a href="#" class="gallery-item"><img src="assets/images/community/c05.jpg" alt="Latihan angkat beban dengan sneakers" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+            <a href="#" class="gallery-item"><img src="assets/images/community/c06.jpg" alt="Siluet pelari saat matahari terbit" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+            <a href="#" class="gallery-item"><img src="assets/images/community/c07.jpg" alt="Sepasang sneakers kanvas krem" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+          </div>
+          <div class="gallery-group" aria-hidden="true">
+            <a href="#" class="gallery-item" tabindex="-1"><img src="assets/images/community/c01.jpg" alt="" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+            <a href="#" class="gallery-item" tabindex="-1"><img src="assets/images/community/c02.jpg" alt="" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+            <a href="#" class="gallery-item" tabindex="-1"><img src="assets/images/community/c03.jpg" alt="" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+            <a href="#" class="gallery-item" tabindex="-1"><img src="assets/images/community/c04.jpg" alt="" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+            <a href="#" class="gallery-item" tabindex="-1"><img src="assets/images/community/c05.jpg" alt="" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+            <a href="#" class="gallery-item" tabindex="-1"><img src="assets/images/community/c06.jpg" alt="" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+            <a href="#" class="gallery-item" tabindex="-1"><img src="assets/images/community/c07.jpg" alt="" loading="lazy" width="600" height="600"><span class="gallery-overlay"><i class="ri-instagram-line"></i></span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ===================== NEWSLETTER ===================== -->
+    <section class="newsletter">
+      <svg class="newsletter-mark" aria-hidden="true"><use href="#kc-mark"/></svg>
+      <div class="container newsletter-inner">
+        <div data-reveal="left">
+          <h2 class="newsletter-title">Diskon 10% Untuk<br>Order Pertamamu</h2>
+          <p>Gabung newsletter untuk info drop terbaru, restock, dan promo khusus member.</p>
+        </div>
+        <form class="newsletter-form" data-newsletter novalidate data-reveal="right">
+          <label for="nl-email" class="sr-only">Alamat email</label>
+          <input type="email" id="nl-email" name="email" placeholder="Alamat email kamu" autocomplete="email" required>
+          <button class="btn btn-dark" type="submit">Daftar <i class="ri-send-plane-2-line"></i></button>
+          <p class="form-msg" data-newsletter-msg role="status"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer" id="kontak">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="#beranda" class="logo logo--light" aria-label="KickCulture, kembali ke beranda">
+            <svg class="logo-mark" aria-hidden="true"><use href="#kc-mark"/></svg>
+            <span class="logo-text"><span class="logo-kick">KICK</span><span class="logo-culture">CULTURE</span></span>
+          </a>
+          <p>Toko sneakers original yang dikurasi untuk kamu yang melangkah dengan gaya sendiri. Sejak 2021.</p>
+          <ul class="socials">
+            <li><a href="#" aria-label="Instagram"><i class="ri-instagram-line"></i></a></li>
+            <li><a href="#" aria-label="TikTok"><i class="ri-tiktok-line"></i></a></li>
+            <li><a href="#" aria-label="X"><i class="ri-twitter-x-line"></i></a></li>
+            <li><a href="#" aria-label="YouTube"><i class="ri-youtube-line"></i></a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Kontak Person</h3>
+          <ul class="contact-list">
+            <li>
+              <i class="ri-user-smile-line" aria-hidden="true"></i>
+              <div><span>Admin / CS</span><strong>Raka Pratama</strong></div>
+            </li>
+            <li>
+              <i class="ri-whatsapp-line" aria-hidden="true"></i>
+              <div><span>WhatsApp</span><a href="https://wa.me/6281234567890" target="_blank" rel="noopener">+62 812-3456-7890</a></div>
+            </li>
+            <li>
+              <i class="ri-mail-line" aria-hidden="true"></i>
+              <div><span>Email</span><a href="mailto:halo@kickculture.id">halo@kickculture.id</a></div>
+            </li>
+            <li>
+              <i class="ri-map-pin-line" aria-hidden="true"></i>
+              <div><span>Toko Offline</span><address>Jl. Langkah Baru No. 21, Kebayoran Baru, Jakarta Selatan 12160</address></div>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Belanja</h3>
+          <ul class="footer-links">
+            <li><a href="#produk" data-filter-link="all">Semua Produk</a></li>
+            <li><a href="#produk" data-filter-link="running">Running</a></li>
+            <li><a href="#produk" data-filter-link="lifestyle">Lifestyle</a></li>
+            <li><a href="#produk" data-filter-link="skate">Skate</a></li>
+            <li><a href="#drop">Limited Drop</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Bantuan</h3>
+          <ul class="footer-links">
+            <li><a href="#">Cara Belanja</a></li>
+            <li><a href="#">Panduan Ukuran</a></li>
+            <li><a href="#">Pengiriman</a></li>
+            <li><a href="#">Retur &amp; Refund</a></li>
+            <li><a href="#">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h3 class="footer-title">Jam Buka (WIB)</h3>
+          <dl class="hours">
+            <div><dt>Senin – Jumat</dt><dd>10.00 – 21.00</dd></div>
+            <div><dt>Sabtu</dt><dd>10.00 – 22.00</dd></div>
+            <div><dt>Minggu</dt><dd>11.00 – 20.00</dd></div>
+          </dl>
+          <p class="open-status" data-open-status>Memuat status…</p>
+        </div>
+      </div>
+
+      <div class="footer-pay">
+        <span>Metode pembayaran</span>
+        <ul>
+          <li>QRIS</li><li>BCA</li><li>Mandiri</li><li>BRI</li><li>GoPay</li><li>OVO</li><li>DANA</li><li>COD</li>
+        </ul>
+      </div>
+
+      <div class="footer-bottom">
+        <p>© <span data-year>2026</span> KickCulture. Semua hak dilindungi.</p>
+        <p>Data kontak di halaman ini masih dummy.</p>
+      </div>
+    </div>
+
+    <div class="footer-giant" data-observe aria-hidden="true">KICKCULTURE</div>
+  </footer>
+
+  <!-- ===================== FLOATING ===================== -->
+  <a href="https://wa.me/6281234567890?text=Halo%20KickCulture%2C%20saya%20mau%20tanya%20produk" class="wa-float" target="_blank" rel="noopener" aria-label="Chat admin via WhatsApp">
+    <i class="ri-whatsapp-line"></i><span>Chat Admin</span>
+  </a>
+
+  <button class="to-top" type="button" data-to-top aria-label="Kembali ke atas">
+    <svg viewBox="0 0 56 56" aria-hidden="true"><circle cx="28" cy="28" r="26"/></svg>
+    <i class="ri-arrow-up-line"></i>
+  </button>
+
+  <!-- ===================== DRAWER: KERANJANG & WISHLIST ===================== -->
+  <div class="backdrop" data-backdrop></div>
+
+  <aside class="drawer" data-drawer aria-hidden="true" aria-label="Keranjang dan wishlist" tabindex="-1">
+    <div class="drawer-head">
+      <div class="drawer-tabs" role="tablist">
+        <button class="drawer-tab is-active" type="button" role="tab" aria-selected="true" data-drawer-tab="cart">Keranjang <span data-cart-count>0</span></button>
+        <button class="drawer-tab" type="button" role="tab" aria-selected="false" data-drawer-tab="wishlist">Wishlist <span data-wishlist-count>0</span></button>
+      </div>
+      <button class="icon-btn" type="button" data-drawer-close aria-label="Tutup"><i class="ri-close-line"></i></button>
+    </div>
+
+    <div class="drawer-panel is-active" data-drawer-panel="cart" role="tabpanel">
+      <div class="ship-progress">
+        <p data-ship-text></p>
+        <div class="ship-bar"><span data-ship-bar></span></div>
+      </div>
+      <ul class="cart-list" data-cart-list></ul>
+      <div class="drawer-foot">
+        <div class="cart-total"><span>Subtotal</span><strong data-cart-total>Rp 0</strong></div>
+        <button class="btn btn-primary btn-block" type="button" data-checkout>Checkout <i class="ri-arrow-right-up-line"></i></button>
+        <p class="drawer-note">Ongkir &amp; voucher dihitung saat checkout.</p>
+      </div>
+    </div>
+
+    <div class="drawer-panel" data-drawer-panel="wishlist" role="tabpanel">
+      <ul class="cart-list" data-wishlist-list></ul>
+    </div>
+  </aside>
+
+  <!-- ===================== QUICK VIEW ===================== -->
+  <div class="modal" data-modal aria-hidden="true">
+    <div class="modal-dialog" role="dialog" aria-modal="true" aria-labelledby="qv-title">
+      <button class="icon-btn modal-close" type="button" data-modal-close aria-label="Tutup"><i class="ri-close-line"></i></button>
+      <div data-modal-body></div>
+    </div>
+  </div>
+
+  <div class="toasts" data-toasts aria-live="polite"></div>
+
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
